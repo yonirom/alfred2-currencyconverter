@@ -4,7 +4,7 @@ class e4QueryParser
 {
 	static $reNumber = '(\s*(from|to)?\s*(?<amount>[\-|\+]?\s*[\d\,\.]+)?)';
 	static $reFrom = '\s*(from\s*)?(?<from>[^\d|\s]{1,3})?';
-	static $reTo = '\s*(to\s*)?(?<to>[^\d|\s]{1,3})?';
+	static $reTo = '\s*(to|in\s*)?(?<to>[^\d|\s]{1,3})?';
 	static $reRules = null;
 
 	protected $app = null;
